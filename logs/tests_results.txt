@@ -1,0 +1,50 @@
+test_absolute (__main__.TestExercice) ... ok
+test_factorial (__main__.TestExercice) ... FAIL
+test_prefixes (__main__.TestExercice) ... ok
+test_summation (__main__.TestExercice) ... ERROR
+test_verify_ages (__main__.TestExercice) ... FAIL
+
+======================================================================
+ERROR: test_summation (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:/Users/Max/Documents/GitHub/c04-ch5-exercices-MaxenceSigouin/test_exercice.py", line 45, in test_summation
+    output = exercice.prime_integer_summation()
+  File "C:\Users\Max\Documents\GitHub\c04-ch5-exercices-MaxenceSigouin\exercice.py", line 26, in prime_integer_summation
+    while number_of_numbers < 100:
+NameError: name 'number_of_numbers' is not defined
+
+======================================================================
+FAIL: test_factorial (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:/Users/Max/Documents/GitHub/c04-ch5-exercices-MaxenceSigouin/test_exercice.py", line 59, in test_factorial
+    self.assertListEqual(
+AssertionError: Lists differ: [0, 0, 0, 0] != [1, 6, 40320, 3628800]
+
+First differing element 0:
+0
+1
+
+- [0, 0, 0, 0]
++ [1, 6, 40320, 3628800] : Mauvaise réponse
+
+======================================================================
+FAIL: test_verify_ages (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:/Users/Max/Documents/GitHub/c04-ch5-exercices-MaxenceSigouin/test_exercice.py", line 74, in test_verify_ages
+    self.assertListEqual(
+AssertionError: Lists differ: [] != [False, True, False, False, True, True, True, True, False]
+
+Second list contains 9 additional elements.
+First extra element 0:
+False
+
+- []
++ [False, True, False, False, True, True, True, True, False] : Mauvaise réponse
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+FAILED (failures=2, errors=1)
